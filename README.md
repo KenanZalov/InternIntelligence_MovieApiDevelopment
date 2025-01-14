@@ -24,35 +24,64 @@ This project is a RESTful API designed for managing a movie database. It allows 
 
 ---
 
-## API Endpoints
+# API Endpoints and Methods
 
-Genre Endpoints
+## Genre Endpoints
 
-1.Add Genre
-- URL: /addGenre
-- Method: POST
-- Request Body
-  {
-  "name": "Action"
-  }
- - Response:
-   - Genre added successfully
-   - Genre already exists
-     
-2.Get All Genres
-- URL: /getAllGenres
-- Method: GET
-- Response:
-  [
-  {
-    "id": 1,
-    "name": "Action"
-  },
-  {
-    "id": 2,
-    "name": "Comedy"
-  }
-]
+### 1. Add Genre
+- **Endpoint:** `/addGenre`
+- **Method:** POST
+- **Description:** Adds a new genre to the database.
+
+### 2. Get All Genres
+- **Endpoint:** `/getAllGenres`
+- **Method:** GET
+- **Description:** Retrieves all genres from the database.
+
+### 3. Update Genre
+- **Endpoint:** `/updateGenre`
+- **Method:** PUT
+- **Description:** Updates an existing genre's details.
+
+### 4. Delete Genre
+- **Endpoint:** `/deleteGenre`
+- **Method:** DELETE
+- **Description:** Deletes a genre by its ID.
+
+---
+
+## Movie Endpoints
+
+### 1. Add Movie
+- **Endpoint:** `/addMovie`
+- **Method:** POST
+- **Description:** Adds a new movie to the database.
+
+### 2. Get All Movies
+- **Endpoint:** `/getAllMovies`
+- **Method:** GET
+- **Description:** Retrieves all movies from the database.
+
+### 3. Update Movie
+- **Endpoint:** `/updateMovie`
+- **Method:** PUT
+- **Description:** Updates an existing movie's details.
+
+### 4. Delete Movie
+- **Endpoint:** `/deleteMovieById`
+- **Method:** DELETE
+- **Description:** Deletes a movie by its ID.
+
+### 5. Get Movie By Title
+- **Endpoint:** `/getMovieByTitle`
+- **Method:** GET
+- **Description:** Retrieves a movie by its title.
+
+### 6. Get Movies By Genre
+- **Endpoint:** `/getMoviesByGenre`
+- **Method:** GET
+- **Description:** Retrieves movies based on their genre.
+
 
 
 
