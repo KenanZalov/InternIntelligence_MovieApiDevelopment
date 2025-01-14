@@ -82,7 +82,9 @@ This project is a RESTful API designed for managing a movie database. It allows 
 - **Method:** GET
 - **Description:** Retrieves movies based on their genre.
 
-
+## Installation and Setup
+git clone https://github.com/KenanZalov/InternIntelligence_MovieApiDevelopment
+cd InternIntelligence_MovieApiDevelopment
 
 
 
