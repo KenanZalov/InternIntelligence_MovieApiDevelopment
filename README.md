@@ -24,21 +24,37 @@ This project is a RESTful API designed for managing a movie database. It allows 
 
 ---
 
-API Endpoints
+## API Endpoints
+
 Genre Endpoints
-Add Genre
 
-URL: /addGenre
-Method: POST
-Request Body:
-json
-Copy code
-{
+1.Add Genre
+- URL: /addGenre
+- Method: POST
+- Request Body
+  {
   "name": "Action"
-}
-Response:
-Genre added successfully
-Genre already exists
+  }
+ - Response:
+   - Genre added successfully
+   - Genre already exists
+     
+2.Get All Genres
+- URL: /getAllGenres
+- Method: GET
+- Response:
+  [
+  {
+    "id": 1,
+    "name": "Action"
+  },
+  {
+    "id": 2,
+    "name": "Comedy"
+  }
+]
 
----
+
+
+
 
